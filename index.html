@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My love uwu</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="cover">
+        <div class="full-img" id="fullImgBox">
+            <img src="images/img1.jpg" class="image" id="fullImg">
+            <span onclick="closefullImg()">X</span>
+        </div>
+
+        <div class="img-gallery">
+            <img src="images/img1.jpg" class="image" onclick="openfullImg(this.src)">
+            <img src="images/img2.jpg" class="image" onclick="openfullImg(this.src)">
+            <img src="images/img3.jpg" class="image" onclick="openfullImg(this.src)">
+            <img src="images/img4.jpg" class="image" onclick="openfullImg(this.src)">
+            <img src="images/img5.jpg" class="image" onclick="openfullImg(this.src)">
+            <img src="images/img6.jpg" class="image" onclick="openfullImg(this.src)">
+            <img src="images/img7.jpg" class="image" onclick="openfullImg(this.src)">
+            <img src="images/img8.jpg" class="image" onclick="openfullImg(this.src)">
+        </div>
+    </div>
+        <script>
+            var fullImgBox = document.getElementById("fullImgBox");
+            var fullImg = document.getElementById("fullImg");
+
+            function openfullImg(pic){
+                fullImgBox.style.display = "flex";
+                fullImg.src = pic;
+            }
+
+            function closefullImg(){
+                fullImgBox.style.display = "none";
+                
+            }
+        </script>
+
+    </body>
+</html>
